@@ -1,15 +1,15 @@
 # Получаем и выводим весь список контактов в виде таблицы (console.table)
 
-http://joxi.ru/nAy1MbeC9qvnYA
+http://joxi.ru/E2pZ9BMivoJ5ar
 
 # Получаем контакт по id
 
-node index.js --action get --id 5
+http://joxi.ru/xAeoOv8fM4a3em
 
 # Добавялем контакт
 
-node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-22
+http://joxi.ru/a2XNGK7TQjKEGr
 
 # Удаляем контакт
 
-node index.js --action remove --id=3
+http://joxi.ru/xAeoOv8fM4a0em

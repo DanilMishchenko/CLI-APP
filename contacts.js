@@ -29,16 +29,14 @@ function removeContact(contactId) {
   fs.readFile(contactsPath)
     .then((data) => {
       const contacts = JSON.parse(data);
-      const result = contacts.find((contact) => contact.id === contactId);
+      const result = contacts.find((contact) => contact.id == contactId);
 
       if (!result) {
         console.log("Sorry we cant find this contact");
         return;
       }
 
-      const newContacts = contacts.filter(
-        (contact) => contact.id !== contactId
-      );
+      const newContacts = contacts.filter((contact) => contact.id != contactId);
       fs.writeFile(contactsPath, JSON.stringify(newContacts));
       return console.log(`Contact ${result.name} deleted`);
     })
